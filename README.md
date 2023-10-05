@@ -31,3 +31,6 @@ Main.cpp -> This file simulates the 3 different cars accelerating and decelerati
 How to run this code?
 
 In the command terminal: Navigate to the parent directory of this program i.e. Assignment 2. Please type "make" to execute the code. After completion of the command a "car_program.exe" file is created. Please type the newly file created name with the extension.
+
+![Screenshot 2023-10-05 171633](https://github.com/BataschJr/Endterm_Submission/assets/86794474/2231af72-e095-4243-933d-4ff6d56c3775)
+
