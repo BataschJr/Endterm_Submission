@@ -4,20 +4,34 @@
 Vehicle::Vehicle() : speed(0), gear(0) {}
 Vehicle::~Vehicle() {}
 
+int Vehicle::gearShift(int newGear)
+{
+    std::cout << "Please put the gear to accelerate?" << std::endl;
+    std::cin >> newGear;
+    gear = newGear;
+    return gear;
+}
+
 void Vehicle::acceleration()
 {
-    char input;
-    std::cout << "Do you want to accelerate? Y/N" << std::endl;
-    std::cin >> input;
+    gear = gearShift(gear);
     try
     {
-        if (input == 'Y' || input == 'y')
+        if (gear == 1)
         {
             speed += 10;
         }
+        else if (gear == 2)
+        {
+            speed += 20;
+        }
+        else if (gear == 3)
+        {
+            speed += 30;
+        }
         else
         {
-            speed = speed;
+            std::cout << "Third gear is the maximum gear." << std::endl;
         }
     }
     catch (std::string input)
@@ -28,29 +42,27 @@ void Vehicle::acceleration()
 
 void Vehicle::brake()
 {
-    char input;
-    std::cout << "Do you want to apply brakes? Y/N" << std::endl;
-    std::cin >> input;
-    try
+    if (gear <= 3)
     {
-        if (input == 'Y' || input == 'y' && speed >= 10)
+        char input;
+        std::cout << "Do you want to apply brakes? Y/N" << std::endl;
+        std::cin >> input;
+        try
         {
-            speed -= 10;
+            if (input == 'Y' || input == 'y' && speed >= 10)
+            {
+                speed -= 10;
+            }
+            else
+            {
+                speed = speed;
+            }
         }
-        else
+        catch (double speed)
         {
-            speed = speed;
+            throw "Vehicle already at rest.";
         }
     }
-    catch (double speed)
-    {
-        throw "Vehicle already at rest.";
-    }
-}
-
-void Vehicle::gearShift(int newGear)
-{
-    gear = newGear;
 }
 
 double Vehicle::getSpeed() const

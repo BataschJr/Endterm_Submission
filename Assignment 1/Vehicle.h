@@ -8,7 +8,7 @@ public:
     virtual ~Vehicle();
     void acceleration();
     void brake();
-    void gearShift(int gear);
+    int gearShift(int gear);
     double getSpeed() const;
 
 private:
