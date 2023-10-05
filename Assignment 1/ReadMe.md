@@ -11,7 +11,8 @@ Main.cpp -> This file gives us the actual output after brakes and acceleration a
 
 How to run this code?
 
-In the command terminal navigate to the parent directory of this program.
+In the command terminal:
+Navigate to the parent directory of this program i.e. Assignment 1.
 Please type "make" to execute the code.
-After completion of the command a "car_program.exe" file is created. 
-Please type the newly file created name with the extension. 
+After completion of the command a "car_program.exe" file is created.
+Please type the newly file created name with the extension.

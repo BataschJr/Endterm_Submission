@@ -1,10 +1,13 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
+// define vehicle class
 class Vehicle
 {
 public:
+    // constructor
     Vehicle();
+    // destructor
     virtual ~Vehicle();
     void acceleration();
     void brake();
