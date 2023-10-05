@@ -1,7 +1,10 @@
 #include <iostream>
 #include "Vehicle.h"
 
+// initializing the speed and gear to zero
 Vehicle::Vehicle() : speed(0), gear(0) {}
+
+// destructor
 Vehicle::~Vehicle() {}
 
 int Vehicle::gearShift(int newGear)
@@ -40,6 +43,7 @@ void Vehicle::acceleration()
     }
 }
 
+// Method to apply brakes if the gear is less than or equal to 3
 void Vehicle::brake()
 {
     if (gear <= 3)
@@ -65,6 +69,7 @@ void Vehicle::brake()
     }
 }
 
+// Getter method to retrieve the current speed of the vehicle
 double Vehicle::getSpeed() const
 {
     return speed;

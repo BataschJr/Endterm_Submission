@@ -1,0 +1,17 @@
+This code is about accelerating and deceleration of a car.
+
+The above code have 5 different files.
+
+Vehicle.h -> This file contains the class of the vehicle program.
+Vehicle.cpp -> It contains all the function definitions
+
+Car.h -> It contains class Car which inherits the vehicle class.
+
+Main.cpp -> This file gives us the actual output after brakes and acceleration applied.
+
+How to run this code?
+
+In the command terminal navigate to the parent directory of this program.
+Please type "make" to execute the code.
+After completion of the command a "car_program.exe" file is created. 
+Please type the newly file created name with the extension. 
