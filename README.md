@@ -1,6 +1,7 @@
 # Endterm_Submission
 
 #Assignment 1
+
 This code is about accelerating and deceleration of a car.
 
 The above code have 5 different files.
@@ -16,6 +17,7 @@ How to run this code?
 In the command terminal: Navigate to the parent directory of this program i.e. Assignment 1. Please type "make" to execute the code. After completion of the command a "car_program.exe" file is created. Please type the newly file created name with the extension.
 
 #Assignment 2
+
 This code is about accelerating and deceleration of a car.
 
 The above code have 5 different files.
